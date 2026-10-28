@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>Valid Affidavit</title>
+
+  <style>
+    :root {
+      --green: #07966f;
+      --mint: #d0f8e7;
+      --navy: #171d2d;
+      --border: #e4e5e9;
+      --background: #ffffff;
+      --muted: #687080;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 6px 0 30px;
+      background: #fdfdfd;
+      color: var(--navy);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 28px 28px 36px;
+      background: var(--background);
+      border-radius: 26px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 18px 0 36px;
+    }
+
+    .emblem {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 24px;
+      border: 3px solid var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .demo-label {
+      display: inline-block;
+      padding: 7px 13px;
+      margin-bottom: 15px;
+      border: 1px solid #e8bd6b;
+      border-radius: 6px;
+      background: #fff6df;
+      color: #78520b;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      min-height: 78px;
+      padding: 18px;
+      margin-bottom: 36px;
+      border-radius: 24px;
+      background: var(--mint);
+      color: var(--green);
+      font-size: clamp(20px, 4.5vw, 28px);
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .status-icon {
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      border: 2px solid currentColor;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 19px;
+    }
+
+    .card {
+      padding: 36px;
+      margin-bottom: 48px;
+      border: 2px solid var(--border);
+      border-radius: 25px;
+      box-shadow: 0 5px 16px rgba(15, 23, 42, 0.035);
+      overflow-wrap: anywhere;
+    }
+
+    .field {
+      margin-bottom: 34px;
+    }
+
+    .field:last-child {
+      margin-bottom: 0;
+    }
+
+    .label {
+      margin-bottom: 24px;
+      color: var(--green);
+      font-size: clamp(16px, 3.4vw, 23px);
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .value {
+      color: var(--navy);
+      font-size: clamp(19px, 4vw, 27px);
+      font-weight: 700;
+      line-height: 1.55;
+      text-transform: uppercase;
+    }
+
+    .notice {
+      margin-top: -18px;
+      padding: 15px 18px;
+      border-radius: 12px;
+      background: #f3f5f8;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .footer {
+      padding: 18px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      .page {
+        padding: 20px 18px 28px;
+        border-radius: 22px;
+      }
+
+      .header {
+        padding-top: 22px;
+        padding-bottom: 28px;
+      }
+
+      .card {
+        padding: 30px 24px;
+        margin-bottom: 28px;
+        border-radius: 22px;
+      }
+
+      .label {
+        margin-bottom: 17px;
+      }
+
+      .field {
+        margin-bottom: 28px;
+      }
+
+      .status {
+        margin-bottom: 28px;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="header">
+      <div class="emblem" aria-label="Demonstration emblem">
+        Affidavit
+      </div>
+      <div class="demo-label">
+        Affi
+      </div>
+    </header>
+
+    <section class="status" aria-label="Demonstration status">
+      <span>Valid Affidavit Record</span>
+      <span class="status-icon" aria-hidden="true">✓</span>
+    </section>
+
+    <section class="card">
+      <div class="field">
+        <div class="label">REF NO</div>
+        <div class="value">FHC-AFD-1788871291-453129</div>
+      </div>
+
+      <div class="field">
+        <div class="label">DATE CREATED</div>
+        <div class="value">2026-10-27</div>
+      </div>
+
+      <div class="field">
+        <div class="label">DOCUMENT TITLE</div>
+        <div class="value">
+          SWORN AFFIDAVIT OF CORRECTION OF DATE OF BIRTH
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="label">STATUS</div>
+        <div class="value">APPROVED</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="field">
+        <div class="label">PARTY/DEPONENT</div>
+        <div class="value">AGUNBIADE AYODEJI AMOS</div>
+      </div>
+
+      <div class="field">
+        <div class="label">DATE OF BIRTH</div>
+        <div class="value">23/09/1996</div>
+      </div>
+    </section>
+
+    <div class="notice">
+      Go to Homepage
+    </div>
+
+    <footer class="footer">
+      - -
+    </footer>
+
+  </main>
+</body>
+</html>
